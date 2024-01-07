@@ -169,7 +169,7 @@ export default function Home() {
 
         
         <div className={styles.homebannerimage}>
-          <Image src="/images/homeimage.png" alt="Own Identity Inc Logo" width={800} height={500} />
+          <Image src="/images/homeimage.png" alt="Own Identity Inc Logo" width={700} height={400} />
         </div>
 
          
