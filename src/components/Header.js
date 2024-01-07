@@ -35,7 +35,7 @@ const Header = () => (
 
             <div className={styles.HeaderCheck}>
                 <Link href="/CheckStatus" className={styles.HeaderCheck}>
-                    <h2>Check</h2>       
+                    <h2>Status</h2>       
                 </Link>
             </div>
 
