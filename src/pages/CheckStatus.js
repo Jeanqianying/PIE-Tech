@@ -16,21 +16,15 @@ export default function Check() {
   const [transactionConfirmations, setTransactionConfirmations] = useState(null);
   const [inputData, setInputData] = useState(null);
 
-
-
   useEffect(() => {
     fetchTransactionDetails();
   },[]);
-
-
-    
-  
 
   const fetchTransactionDetails = async () => {
     try {
 
       const hashresponse = await axios.get(
-'https://api-sepolia.etherscan.io/api?module=account&action=txlist&address=0xD85aFDE0b0c9ee7324793653fDEebB27Cd73B47D&startblock=0&endblock=99999999&page=1&offset=0&sort=desc&apikey=CK2KX9PGYG3IBNDRX25SEPSKJQSK5KN2MX');
+        'https://api-sepolia.etherscan.io/api?module=account&action=txlist&address=0xD85aFDE0b0c9ee7324793653fDEebB27Cd73B47D&startblock=0&endblock=99999999&page=1&offset=0&sort=desc&apikey=CK2KX9PGYG3IBNDRX25SEPSKJQSK5KN2MX');
         if (hashresponse.data.result && hashresponse.data.result.length > 0) {
                 const transaction = hashresponse.data.result[0];
                 
@@ -45,9 +39,7 @@ export default function Check() {
         const blockNumber = parseInt(transaction.blockNumber);
         setBlockNumber(blockNumber);
       }
-
       
-
       const receiptResponse = await axios.get(
         'https://api-sepolia.etherscan.io/api?module=account&action=txlist&address=0xD85aFDE0b0c9ee7324793653fDEebB27Cd73B47D&startblock=0&endblock=99999999&page=1&offset=0&sort=desc&apikey=CK2KX9PGYG3IBNDRX25SEPSKJQSK5KN2MX');
         if (receiptResponse.data.result && receiptResponse.data.result.length > 0) {   
@@ -64,7 +56,6 @@ export default function Check() {
         setTransactionConfirmations(transactionConfirmations);
       }
 
-
       const inputresponse = await axios.get(
         'https://api-sepolia.etherscan.io/api?module=account&action=txlist&address=0xD85aFDE0b0c9ee7324793653fDEebB27Cd73B47D&startblock=0&endblock=99999999&page=1&offset=0&sort=desc&apikey=CK2KX9PGYG3IBNDRX25SEPSKJQSK5KN2MX');
         if (inputresponse.data.result && inputresponse.data.result.length > 0) {
@@ -72,8 +63,6 @@ export default function Check() {
                 const inputData = transaction.input;
                 setInputData(inputData);
               }
-
-    
     } catch (error) {
       console.error('Error fetching transaction details:', error);
     }
