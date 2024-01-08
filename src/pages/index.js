@@ -185,10 +185,7 @@ export default function Home() {
         <div className={styles.Footer}>
           <div>
           <Footer/>
-          </div>
-    
-          
-         
+          </div>      
         </div>
         
       </main>
