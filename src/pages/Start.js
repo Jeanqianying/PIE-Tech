@@ -672,7 +672,7 @@ const isValidICNumber = (icNumber) => {
 
 
   const generateKeyPair = () => {
-	// Generate a random private key (256 bits)
+	// Generate private key (256 bits)
 	const privateKey = CryptoJS.lib.WordArray.random(32);
   
 	// Derive the public key from the private key
@@ -711,10 +711,10 @@ const handleEncrypt = () => {
 	setGeneratedKeys(keys);
   
 	try {
-	  // Convert private key to WordArray
+	  // Convert private key to Word Array
 	  const publicKey = CryptoJS.enc.Hex.parse(generatedKeys.publicKey);
   
-	  // Convert user input data to WordArray
+	  // Convert user input data to Word Array
 	  const data = CryptoJS.enc.Utf8.parse(formData);
   
 	  // Encrypt the data using the public key
