@@ -131,7 +131,7 @@ export default function Check() {
                   <p>Transaction Status:</p>
                 </div>
                   <div className={styles.CheckBlockNumberField}>
-                  <p>{transactionStatus !== null ? (transactionStatus === 1 ? 'Failure' : 'Success') : 'Loading...'}</p>
+                  <p>{transactionStatus !== null ? (transactionStatus === 1 ? 'Success' : 'Failure') : 'Loading...'}</p>
                   </div>
               </div>
 
