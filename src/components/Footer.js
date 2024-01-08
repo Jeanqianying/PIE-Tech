@@ -14,7 +14,7 @@ const Footer = () => {
       const iconRect = e.target.getBoundingClientRect();
       setTooltipText(text);
       setTooltipPosition({
-        top: iconRect.bottom + window.scrollY + 10, // Add some offset for better positioning
+        top: iconRect.bottom + window.scrollY + 10, 
         left: iconRect.left + iconRect.width / 2 + window.scrollX
       });
     };
