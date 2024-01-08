@@ -37,12 +37,12 @@ export default function Home() {
       <main className={`${styles.main} ${inter.className}`}>
 
         <div className={styles.description}>
+  
         <Header/>
  
-          <div>
- 
+        <div>
   
-          </div>
+        </div>
       </div>
         
        
