@@ -711,7 +711,7 @@ const handleEncrypt = () => {
 	setGeneratedKeys(keys);
   
 	try {
-	  // Convert private key to Word Array
+	  // Convert public key to Word Array
 	  const publicKey = CryptoJS.enc.Hex.parse(generatedKeys.publicKey);
   
 	  // Convert user input data to Word Array
