@@ -44,7 +44,7 @@ export default function ContacUs() {
       const iconRect = e.target.getBoundingClientRect();
       setTooltipText(text);
       setTooltipPosition({
-        top: iconRect.bottom + window.scrollY + 10, // Add some offset for better positioning
+        top: iconRect.bottom + window.scrollY + 10, 
         left: iconRect.left + iconRect.width / 2 + window.scrollX
       });
     };
@@ -99,11 +99,11 @@ export default function ContacUs() {
         email: false,
         address: false,
         age: false, // New field
-        identificationType: false, // New field
-        icNumber: false, // New field
-        passportNumber: false, // New field
-        phone: false, // New field
-        employmentStatus: false // New field
+        identificationType: false, 
+        icNumber: false, 
+        passportNumber: false, 
+        phone: false, 
+        employmentStatus: false 
       });
     
       const [formData, setFormData] = useState({
