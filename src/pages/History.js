@@ -43,7 +43,7 @@ export default function History() {
         <div className={styles.CheckBlock}>
           <div className={styles.CheckBlockTitle1}>Transaction History</div>
           <div className={styles.CheckBlockTitle2}>
-            Track your token creation history.
+            Track your UDT token creation history.
           </div>
 
           <div className={styles.CheckContent}>
